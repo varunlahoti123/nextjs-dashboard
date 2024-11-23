@@ -12,7 +12,6 @@ import { formatCurrency } from './utils';
 export async function fetchRevenue() {
   try {
     console.log('Starting revenue fetch...');
-    await new Promise((resolve) => setTimeout(resolve, 3000));
     
     const client = await db.connect();
     
